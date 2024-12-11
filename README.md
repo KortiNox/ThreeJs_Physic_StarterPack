@@ -1,2 +1,1 @@
-# ThreeJs_Physic_StarterPack
-# ThreeJs_Physic_StarterPack
+# New Year Three js project
