@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Starter</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <canvas class="threejs"></canvas>
+    <script type="module" src="src/main.js"></script>
+    <div class="overlay"></div>
+    <h1 class="loading">Loading Expireance... <span id="progressPercentage">0</span>%</h1>
+    <button class="start">START</button>
+    <!-- Кнопка для открытия модального окна -->
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+      <div id="myModal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <div id="joystick" class="joystick">
+      <div id="joystick-knob" class="joystick-knob">ONLY TOUCHPAD</div>
+    </div>
+
+    <script type="module" src="/App/UI/ModalManager.js"></script>
+    <script type="module">
+      import ModalManager from '/App/UI/ModalManager.js';
+
+      const modalManager = new ModalManager();
+      const myBtn = document.getElementById('myBtn');
+
+      myBtn.onclick = () => {
+        modalManager.openModal('Заголовок модального окна', 'Описание модального окна');
+      };
+    </script>
+  </body>
+</html>

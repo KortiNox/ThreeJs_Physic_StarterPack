@@ -1,0 +1,22 @@
+{
+  "name": "solar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1",
+    "vite-plugin-wasm": "^3.3.0"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d": "^0.14.0",
+    "three": "^0.170.0",
+    "tweakpane": "^4.0.5",
+    "vite-plugin-top-level-await": "^1.4.4",
+    "zustand": "^5.0.1"
+  }
+}
